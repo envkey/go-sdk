@@ -19,6 +19,7 @@ pwd
 
 ENVKEYFETCH_VERSION=$(cat $THIS_DIR/../../../releases/envkeyfetch/envkeyfetch-version.txt)
 echo "Using envkey-fetch $ENVKEYFETCH_VERSION"
+echo "$version" > version.txt
 
 git checkout -b "$branch" || git checkout "$branch"
 git branch
