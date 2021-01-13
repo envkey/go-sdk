@@ -5,7 +5,7 @@ Integrate [EnvKey](https://www.envkey.com) with your Go projects to keep api key
 ## Installation
 
 ```bash
-go get github.com/envkey/envkeygo
+go get github.com/envkey/go-sdk
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ Then load your EnvKey configuration in `main.go`:
 // main.go
 import (
   "os"
-  _ "github.com/envkey/envkeygo"
+  _ "github.com/envkey/go-sdk"
 )
 
 // assuming you have GITHUB_TOKEN set in EnvKey
