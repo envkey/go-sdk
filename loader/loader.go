@@ -5,7 +5,7 @@ import (
 	"errors"
 	"os"
 
-	"github.com/org2321/reponame/public/sdks/envkey-fetch/fetch"
+	"github.com/envkey/go-envkeyfetch/fetch"
 	"github.com/joho/godotenv"
 )
 
