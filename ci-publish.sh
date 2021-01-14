@@ -30,8 +30,9 @@ rm -rf ./*
 cp -r $THIS_DIR/* ./
 # go modules
 rm ./go.mod
+rm ./go.sum
 mv ./go.mod.public ./go.mod
-go mod download
+bash ci-test.sh
 
 git add -A
 git commit -m "Release v${version}"
