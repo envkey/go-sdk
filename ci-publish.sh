@@ -13,13 +13,15 @@ PUBLIC_GO_MOD_REPO=$(
   cd "$THIS_DIR/../../../../go-sdk"
   pwd -P
 )
+ENVKEYFETCH_VERSION=$(cat $THIS_DIR/../../../releases/envkeyfetch/envkeyfetch-version.txt)
+
+echo "Using envkey-fetch $ENVKEYFETCH_VERSION"
+
+echo "$version" > version.txt
+
 # assume the repo exists
 cd $PUBLIC_GO_MOD_REPO || "did you git clone go-sdk mirror?"
 pwd
-
-ENVKEYFETCH_VERSION=$(cat $THIS_DIR/../../../releases/envkeyfetch/envkeyfetch-version.txt)
-echo "Using envkey-fetch $ENVKEYFETCH_VERSION"
-echo "$version" > version.txt
 
 git checkout -b "$branch" || git checkout "$branch"
 git branch
