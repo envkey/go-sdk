@@ -31,6 +31,7 @@ rm -rf ./*
 # files to move over
 cp -r $THIS_DIR/* ./
 # go modules
+# go.mod.public created during release_sdks.ts
 rm ./go.mod
 rm ./go.sum
 mv ./go.mod.public ./go.mod

@@ -9,7 +9,7 @@ import (
 	"github.com/envkey/go-sdk/loader"
 )
 
-const VALID_ENVKEY = "6tqBpyrdL9XjoPBu97BW-xVuoQrtn2UtMcRwM-api-v2-staging.envkey.com"
+const VALID_ENVKEY = "2L9Xy76BkmawqLUkw7Pah6jQHU-4KcNqgRHVTx2UxRpL8Uf7hxP12-api-v2-staging.envkey.com"
 const INVALID_ENVKEY = "Emzt4BE7C23QtsC7gb1z-3NvfNiG1Boy6XH2oinvalid-api-v2-staging.envkey.com"
 
 func TestLoadMissing(t *testing.T) {
